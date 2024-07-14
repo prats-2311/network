@@ -6,7 +6,10 @@ fs.createReadStream(process.argv[2])
 
 
 function toUpper(buf,enc,next){
-next(null,buf.toString().toUpperCase())
+//next(null,buf.toString().toUpperCase())
+this.push(buf.toString().toUpperCase())
+this.push(null)
+//next()
 }
 
 

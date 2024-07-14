@@ -8,4 +8,4 @@ var server = http.createServer(function (req, res) {
     res.end('ok\n')
   })
 })
-server.listen(6000)
+server.listen(8000)
